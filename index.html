@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Encriptador y desencripta tus Textos</h1>
+</header>
+
+<main>
+    <section class="input-section">
+        <label for="inputText">Escribe tu texto aquí:</label>
+        <textarea id="inputText" placeholder="Escribe tu texto aquí..." aria-label="Área de entrada de texto"></textarea><br>
+        <button onclick="encriptar()" aria-label="Botón para encriptar texto">Encriptar</button>
+        <button onclick="desencriptar()" aria-label="Botón para desencriptar texto">Desencriptar</button>
+    </section>
+    <section id="outputContainer">
+        <div id="imageWrapper">
+            <img id="placeholderImage" src="./assets/Imagen-1.webp" alt="Imagen de marcador de posición" style="display: block;"/>
+        </div>
+        <div id="output" style="display:none;" aria-label="Área de salida de texto encriptado o desencriptado"></div>
+        <button id="copyButton" style="display:none;" onclick="copiarTexto()" aria-label="Botón para copiar texto">Copiar Texto</button>
+        <p id="copyFeedback" style="display:none;">Texto copiado</p>
+    </section>
+</main>
+
+<footer>
+    <p>Desarrollado por Meli Gallardo Ahmad</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
